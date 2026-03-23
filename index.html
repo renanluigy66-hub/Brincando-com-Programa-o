@@ -3,57 +3,202 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Projeto ❤️</title>
+  <title>I Love</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <canvas id="particles"></canvas>
+  <canvas id="bgCanvas"></canvas>
+  <canvas id="particleCanvas"></canvas>
 
   <div class="overlay-dark" id="darkOverlay"></div>
 
   <main class="scene">
-    <!-- ETAPA 1 -->
     <section id="intro" class="section active">
-      <div class="love-container" id="loveContainer">
-        <span class="love-letter l1">I</span>
-        <span class="love-letter l2">L</span>
-        <span class="love-letter l3">O</span>
-        <span class="love-letter l4">V</span>
-        <span class="love-letter l5">E</span>
+      <div class="rose-field" aria-hidden="true">
+        <div class="blue-rose rose1">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
+          </div>
+        </div>
+
+        <div class="blue-rose rose2">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
+          </div>
+        </div>
+
+        <div class="blue-rose rose3">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
+          </div>
+        </div>
+
+        <div class="blue-rose rose4">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
+          </div>
+        </div>
       </div>
 
-      <button id="startBtn" class="btn yes-main">Yes</button>
+     <div class="love-stage" id="loveStage">
+  <div class="love-container" id="loveContainer">
+    <span class="love-letter l1">I</span>
+    <span class="love-letter l2">L</span>
+    <span class="love-letter l3">O</span>
+    <span class="love-letter l4">V</span>
+    <span class="love-letter l5">E</span>
+  </div>
 
-      <div id="heartText" class="heart-text hidden">❤️</div>
+  <div id="heartText" class="heart-text hidden">💙</div>
+</div>
+
+<button id="startBtn" class="btn yes-main">Yes</button>
     </section>
 
-    <!-- ETAPA 2 -->
     <section id="questionSection" class="section">
-      <div id="pandaWrap" class="panda-wrap">
-        <div id="panda" class="panda">
-          <div class="ear left"></div>
-          <div class="ear right"></div>
-          <div class="face">
-            <div class="glasses">
-              <div class="glass left-glass"></div>
-              <div class="bridge"></div>
-              <div class="glass right-glass"></div>
-            </div>
-            <div class="eye-patch left-patch"></div>
-            <div class="eye-patch right-patch"></div>
-            <div class="eye left-eye"></div>
-            <div class="eye right-eye"></div>
-            <div class="nose"></div>
-            <div class="mouth"></div>
+      <div class="rose-field" aria-hidden="true">
+        <div class="blue-rose rose1">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
           </div>
-          <div class="body"></div>
-          <div class="arm left-arm"></div>
-          <div class="arm right-arm"></div>
+        </div>
+
+        <div class="blue-rose rose2">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
+          </div>
+        </div>
+
+        <div class="blue-rose rose3">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
+          </div>
+        </div>
+
+        <div class="blue-rose rose4">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="pandaWrap" class="panda-wrap">
+        <div class="panda">
+          <div class="panda-shadow"></div>
+
+          <div class="panda-head">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+
+            <div class="face">
+              <div class="face-glow"></div>
+              <div class="cheek left"></div>
+              <div class="cheek right"></div>
+
+              <div class="eye-patch left-patch"></div>
+              <div class="eye-patch right-patch"></div>
+
+              <div class="glasses">
+                <div class="glass left-glass"></div>
+                <div class="bridge"></div>
+                <div class="glass right-glass"></div>
+              </div>
+
+              <div class="eye left-eye"></div>
+              <div class="eye right-eye"></div>
+              <div class="eye-shine left-shine"></div>
+              <div class="eye-shine right-shine"></div>
+
+              <div class="nose"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+
+          <div class="panda-body">
+            <div class="belly"></div>
+            <div class="arm left-arm"></div>
+            <div class="arm right-arm"></div>
+            <div class="leg left-leg"></div>
+            <div class="leg right-leg"></div>
+          </div>
         </div>
       </div>
 
       <div id="questionBox" class="question-box">
         <h1>você quer conhecer o amor da minha vida?</h1>
+        <p class="subtitle">clica em yes 💙</p>
         <div class="buttons">
           <button class="btn q-btn" id="yes1">Yes</button>
           <button class="btn q-btn" id="yes2">Yes</button>
@@ -61,35 +206,116 @@
       </div>
     </section>
 
-    <!-- ETAPA 3 -->
     <section id="revealSection" class="section">
-      <div class="reveal-content">
-        <h1 class="reveal-title">Ela é o amor da minha vida 💖</h1>
+      <div class="rose-field" aria-hidden="true">
+        <div class="blue-rose rose1">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
+          </div>
+        </div>
+
+        <div class="blue-rose rose2">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
+          </div>
+        </div>
+
+        <div class="blue-rose rose3">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
+          </div>
+        </div>
+
+        <div class="blue-rose rose4">
+          <div class="stem"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+          <div class="bloom">
+            <span class="petal p1"></span>
+            <span class="petal p2"></span>
+            <span class="petal p3"></span>
+            <span class="petal p4"></span>
+            <span class="petal p5"></span>
+            <span class="petal p6"></span>
+            <span class="petal core"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-content" id="revealContent">
+        <h1 class="reveal-title">Ela é o amor da minha vida 💙</h1>
 
         <div class="photo-area">
+          <div class="photo-glow"></div>
           <img src="foto.jpg" alt="Foto dela" class="girl-photo" id="girlPhoto" />
-          <div class="panda-corner" id="pandaCorner">
+
+          <div class="panda-corner">
             <div class="small-panda">
-              <div class="ear left"></div>
-              <div class="ear right"></div>
-              <div class="face">
-                <div class="glasses">
-                  <div class="glass left-glass"></div>
-                  <div class="bridge"></div>
-                  <div class="glass right-glass"></div>
+              <div class="panda-head">
+                <div class="ear left"></div>
+                <div class="ear right"></div>
+
+                <div class="face">
+                  <div class="face-glow"></div>
+                  <div class="cheek left"></div>
+                  <div class="cheek right"></div>
+
+                  <div class="eye-patch left-patch"></div>
+                  <div class="eye-patch right-patch"></div>
+
+                  <div class="glasses">
+                    <div class="glass left-glass"></div>
+                    <div class="bridge"></div>
+                    <div class="glass right-glass"></div>
+                  </div>
+
+                  <div class="eye left-eye heart-eye">❤</div>
+                  <div class="eye right-eye heart-eye">❤</div>
+
+                  <div class="nose"></div>
+                  <div class="mouth smile"></div>
                 </div>
-                <div class="eye-patch left-patch"></div>
-                <div class="eye-patch right-patch"></div>
-                <div class="eye left-eye heart-eye">❤</div>
-                <div class="eye right-eye heart-eye">❤</div>
-                <div class="nose"></div>
-                <div class="mouth smile"></div>
+              </div>
+
+              <div class="panda-body">
+                <div class="belly"></div>
+                <div class="arm left-arm"></div>
+                <div class="arm right-arm"></div>
+                <div class="leg left-leg"></div>
+                <div class="leg right-leg"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <p class="final-text">e eu queria te mostrar isso de um jeito especial ✨</p>
+        <p class="final-text">eu só queria te mostrar isso de um jeito especial ✨</p>
       </div>
     </section>
   </main>
